@@ -1,0 +1,156 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(63, 171, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'Arial', sans-serif;
+    font-style: italic;
+    padding: 16px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+header h1,
+header ul {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sobre,
+.produtos {
+    max-width: 1024px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.sobre {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+.imagem-loja img {
+    max-width: 100%;
+    height: auto;
+}
+
+.texto-sobre {
+    max-width: 600px;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.produto {
+    width: 200px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.adicionar-carrinho {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.adicionar-carrinho:hover {
+    background-color: #45a049;
+}
+
+@media screen and (max-width: 1023px) and (min-width: 641px) {
+    .sobre {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto-sobre {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .produtos {
+        justify-content: center;
+    }
+
+    .produto {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .sobre {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto-sobre {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .produtos {
+        justify-content: center;
+    }
+
+    .produto {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    .produto img {
+        width: 100%;
+        height: auto;
+    }
+
+    .adicionar-carrinho {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
